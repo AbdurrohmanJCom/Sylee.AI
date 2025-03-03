@@ -1,0 +1,196 @@
+{
+    "telegram": [
+        {
+            "bot_api_key": "7716546162:AAFtHSmcoxiYyqvhArRjghaZbqIzbH85lnM",
+            "channel_id": "-1002459567258",
+            "developers_id": [7514237434, 7088907990, 1927099919]
+        }
+    ],
+    "packages": [
+        {
+            "id": 1,
+            "words": 2000,
+            "price_usd": 3
+        },
+        {
+            "id": 2,
+            "words": 4000,
+            "price_usd": 5
+        },
+        {
+            "id": 3,
+            "words": 10000,
+            "price_usd": 10
+        },
+        {
+            "id": 4,
+            "words": 15000,
+            "price_usd": 13
+        },
+        {
+            "id": 5,
+            "words": 25000,
+            "price_usd": 20
+        }
+    ],
+    "ai": {
+        "humanization": {
+            "api_key": "aa3fcf01cb0547d1bfa8de83134156f5",
+            "endpoint_submit": "https://bypass.hix.ai/api/hixbypass/v1/submit",
+            "endpoint_obtain": "https://bypass.hix.ai/api/hixbypass/v1/obtain",
+            "mode": "Latest"
+        }
+    },
+    "texts": {
+        "welcome": {
+            "eng": "👋 **Welcome to HumanizeBot!**\n\n🎯 I can help you humanize text to bypass AI detection.\n\n🔽 Use the buttons below to:\n• **Humanize your text** 🤖➡️👤\n• **Check your balance** 💰\n• **View top-up history** 📜",
+            "uzb": "👋 **HumanizeBot-ga xush kelibsiz!**\n\n🎯 Men sizga AI aniqlashdan o'tish uchun matnni insonlashtirishda yordam bera olaman.\n\n🔽 Quyidagi tugmalarni ishlating:\n• **Matningizni insonlashtiring** 🤖➡️👤\n• **Balansingizni tekshiring** 💰\n• **To'lov tarixini ko'ring** 📜",
+            "rus": "👋 **Добро пожаловать в HumanizeBot!**\n\n🎯 Я могу помочь вам гуманизировать текст, чтобы обойти обнаружение ИИ.\n\n🔽 Используйте кнопки ниже, чтобы:\n• **Гуманизировать ваш текст** 🤖➡️👤\n• **Проверить ваш баланс** 💰\n• **Просмотреть историю пополнений** 📜"
+        },
+        "unauthorized": {
+            "eng": "You are not authorized to use this command.",
+            "uzb": "Siz ushbu buyruqni ishlatishga ruxsat etilmadingiz.",
+            "rus": "Вы не авторизованы для использования этой команды."
+        },
+        "invalid_command_format": {
+            "eng": "Invalid command format. Use: /pornhub <user_id> <amount>",
+            "uzb": "Noto'g'ri buyruq formati. Foydalaning: /pornhub <user_id> <amount>",
+            "rus": "Неверный формат команды. Используйте: /pornhub <user_id> <amount>"
+        },
+        "user_not_found": {
+            "eng": "User not found.",
+            "uzb": "Foydalanuvchi topilmadi.",
+            "rus": "Пользователь не найден."
+        },
+        "balance_updated": {
+            "eng": "🎉 Your balance has been updated!\n\n🔹 **Amount Added:** {amount} words\n🔹 **New Balance:** {new_balance} words",
+            "uzb": "🎉 Balansingiz yangilandi!\n\n🔹 **Qo'shilgan miqdor:** {amount} so'zlar\n🔹 **Yangi balans:** {new_balance} so'zlar",
+            "rus": "🎉 Ваш баланс обновлен!\n\n🔹 **Добавлено:** {amount} слов\n🔹 **Новый баланс:** {new_balance} слов"
+        },
+        "balance_update_success": {
+            "eng": "✅ Successfully added {amount} words to user {target_user_id}'s balance.",
+            "uzb": "✅ {amount} so'zlar foydalanuvchi {target_user_id} balansiga muvaffaqiyatli qo'shildi.",
+            "rus": "✅ Успешно добавлено {amount} слов к балансу пользователя {target_user_id}."
+        },
+        "invalid_input": {
+            "eng": "Invalid input. Ensure user_id and amount are integers.",
+            "uzb": "Noto'g'ri kiritish. user_id va miqdor butun sonlar ekanligiga ishonch hosil qiling.",
+            "rus": "Неверный ввод. Убедитесь, что user_id и количество являются целыми числами."
+        },
+        "error_occurred": {
+            "eng": "‼️An error occurred: {error_message}",
+            "uzb": "‼️Xato yuz berdi: {error_message}",
+            "rus": "‼️Произошла ошибка: {error_message}"
+        },
+        "check_balance": {
+            "eng": "💼 **Your balance details:**\n🔹 **Trial Balance:** {trial_balance} words\n🔹 **Balance:** {balance} words",
+            "uzb": "💼 **Balans tafsilotlari:**\n🔹 **Sinov balansi:** {trial_balance} so'zlar\n🔹 **Balans:** {balance} so'zlar",
+            "rus": "💼 **Детали вашего баланса:**\n🔹 **Пробный баланс:** {trial_balance} слов\n🔹 **Баланс:** {balance} слов"
+        },
+        "please_register": {
+            "eng": "Please use /start to register first.",
+            "uzb": "Iltimos, avval ro'yxatdan o'tish uchun /start ni ishlating.",
+            "rus": "Пожалуйста, используйте /start для регистрации сначала."
+        },
+        "select_package": {
+            "eng": "✨ **Select Your Perfect Package** ✨\n\n{package_details}",
+            "uzb": "✨ **Mukammal paketni tanlang** ✨\n\n{package_details}",
+            "rus": "✨ **Выберите идеальный пакет** ✨\n\n{package_details}"
+        },
+        "package_selected": {
+            "eng": "🎉 **Package {package_id} Selected!**\n\n📦 **Package Details:**\n✨ {words} words\n💵 ${price_usd}\n💰 {price_uzs} UZS\n\n💳 **Payment Details:**\nCard: 9860 2466 0168 6081\nName: M ABDURASHIDOV\n\n✅ Click the button below after payment to submit your proof!",
+            "uzb": "🎉 **{package_id} paketi tanlandi!**\n\n📦 **Paket tafsilotlari:**\n✨ {words} so'zlar\n💵 ${price_usd}\n💰 {price_uzs} UZS\n\n💳 **To'lov tafsilotlari:**\nKarta: 9860 2466 0168 6081\nIsm: M ABDURASHIDOV\n\n✅ To'lovdan so'ng isbotingizni yuborish uchun quyidagi tugmani bosing!",
+            "rus": "🎉 **Пакет {package_id} выбран!**\n\n📦 **Детали пакета:**\n✨ {words} слов\n💵 ${price_usd}\n💰 {price_uzs} UZS\n\n💳 **Детали оплаты:**\nКарта: 9860 2466 0168 6081\nИмя: M ABDURASHIDOV\n\n✅ Нажмите кнопку ниже после оплаты, чтобы отправить доказательство!"
+        },
+        "send_payment_proof": {
+            "eng": "📸 Please send a photo of your payment proof.",
+            "uzb": "📸 Iltimos, to'lov isbotingizning fotosuratini yuboring.",
+            "rus": "📸 Пожалуйста, отправьте фото вашего доказательства оплаты."
+        },
+        "payment_proof_received": {
+            "eng": "🔔 New payment proof received!\n\n🧾 Ticket ID {ticket_id}\n👤 User ID {user_id}\n📝 Username @{username}\n📦 Package {package_id}\n💰 Amount ${price_usd} ({price_uzs} UZS)\n📝 Words {words}\n⏳ Status in progress\n📅 Date {current_time}",
+            "uzb": "🔔 Yangi to'lov isboti qabul qilindi!\n\n🧾 Chiptaning ID {ticket_id}\n👤 Foydalanuvchi ID {user_id}\n📝 Foydalanuvchi nomi @{username}\n📦 Paket {package_id}\n💰 Miqdor ${price_usd} ({price_uzs} UZS)\n📝 So'zlar {words}\n⏳ Holat davom etmoqda\n📅 Sana {current_time}",
+            "rus": "🔔 Получено новое доказательство оплаты!\n\n🧾 ID билета {ticket_id}\n👤 ID пользователя {user_id}\n📝 Имя пользователя @{username}\n📦 Пакет {package_id}\n💰 Сумма ${price_usd} ({price_uzs} UZS)\n📝 Слова {words}\n⏳ Статус в процессе\n📅 Дата {current_time}"
+        },
+        "payment_proof_submitted": {
+            "eng": "🧾 Ticket ID {ticket_id}\n👤 User ID {user_id}\n📝 Username @{username}\n📦 Package {package_id}\n💰 Amount ${price_usd} ({price_uzs} UZS)\n📝 Words {words}\n⏳ Status in progress\n📅 Date {current_time}\n\nThank you! Your payment proof has been submitted and is being reviewed. Your balance will be updated once the payment is confirmed by moderators.",
+            "uzb": "🧾 Chiptaning ID {ticket_id}\n👤 Foydalanuvchi ID {user_id}\n📝 Foydalanuvchi nomi @{username}\n📦 Paket {package_id}\n💰 Miqdor ${price_usd} ({price_uzs} UZS)\n📝 So'zlar {words}\n⏳ Holat davom etmoqda\n📅 Sana {current_time}\n\nRahmat! To'lov isbotingiz yuborildi va ko'rib chiqilmoqda. To'lov moderatorlar tomonidan tasdiqlangandan so'ng balansingiz yangilanadi.",
+            "rus": "🧾 ID билета {ticket_id}\n👤 ID пользователя {user_id}\n📝 Имя пользователя @{username}\n📦 Пакет {package_id}\n💰 Сумма ${price_usd} ({price_uzs} UZS)\n📝 Слова {words}\n⏳ Статус в процессе\n📅 Дата {current_time}\n\nСпасибо! Ваше доказательство оплаты отправлено и находится на рассмотрении. Ваш баланс будет обновлен после подтверждения оплаты модераторами."
+        },
+        "payment_accepted": {
+            "eng": "✅\nYour payment has been accepted. {words} words have been added to your balance. \n\n🎉   Your new balance is {new_balance} words.",
+            "uzb": "✅\nTo'lovingiz qabul qilindi. {words} so'zlar balansingizga qo'shildi. \n\n🎉   Yangi balansingiz {new_balance} so'zlar.",
+            "rus": "✅\nВаш платеж принят. {words} слов добавлено к вашему балансу. \n\n🎉   Ваш новый баланс {new_balance} слов."
+        },
+        "payment_declined": {
+            "eng": "‼️\nYour ticket: {ticket_id} request to top-up was declined due to {reason}.\n\nIf you think this is a mistake, please contact the admin at @cheater_joseph.\n\n\nSorry for the inconvenience.",
+            "uzb": "‼️\nSizning chiptangiz: {ticket_id} to'ldirish so'rovi {reason} sababli rad etildi.\n\nAgar bu xato deb o'ylasangiz, iltimos, @cheater_joseph adminiga murojaat qiling.\n\n\nNoqulaylik uchun uzr so'raymiz.",
+            "rus": "‼️\nВаш билет: {ticket_id} запрос на пополнение был отклонен по причине {reason}.\n\nЕсли вы считаете, что это ошибка, пожалуйста, свяжитесь с администратором @cheater_joseph.\n\n\nИзвините за неудобства."
+        },
+        "prompt_humanize": {
+            "eng": "📝 Send me the text you'd like to humanize. You can send multiple messages. Tap 'Done' when you're finished.",
+            "uzb": "📝 Insonlashtirmoqchi bo'lgan matningizni yuboring. Bir nechta xabarlarni yuborishingiz mumkin. Tugatgandan so'ng 'Done' tugmasini bosing.",
+            "rus": "📝 Отправьте мне текст, который вы хотите гуманизировать. Вы можете отправить несколько сообщений. Нажмите 'Готово', когда закончите."
+        },
+        "text_collection_canceled": {
+            "eng": "Text collection has been canceled.",
+            "uzb": "Matn yig'ish bekor qilindi.",
+            "rus": "Сбор текста отменен."
+        },
+        "text_saved": {
+            "eng": "📝 Your text has been saved. Current word count: {word_count}. You can continue sending messages or tap 'Done' when finished.",
+            "uzb": "📝 Matningiz saqlandi. Joriy so'zlar soni: {word_count}. Siz xabarlarni yuborishni davom ettirishingiz yoki tugatgandan so'ng 'Done' tugmasini bosishingiz mumkin.",
+            "rus": "📝 Ваш текст сохранен. Текущее количество слов: {word_count}. Вы можете продолжать отправлять сообщения или нажать 'Готово', когда закончите."
+        },
+        "insufficient_balance": {
+            "eng": "You have no remaining trials or balance. Please contact support for more access.",
+            "uzb": "Sizda qolgan sinovlar yoki balans yo'q. Ko'proq kirish uchun qo'llab-quvvatlash xizmatiga murojaat qiling.",
+            "rus": "У вас нет оставшихся пробных периодов или баланса. Пожалуйста, свяжитесь с поддержкой для получения дополнительного доступа."
+        },
+        "insufficient_words": {
+            "eng": "You need {required_words} words but only have {total_balance} words available in your balance. Please top up or contact support for more access.",
+            "uzb": "Sizga {required_words} so'zlar kerak, lekin balansingizda faqat {total_balance} so'zlar mavjud. Iltimos, to'ldiring yoki ko'proq kirish uchun qo'llab-quvvatlash xizmatiga murojaat qiling.",
+            "rus": "Вам нужно {required_words} слов, но у вас есть только {total_balance} слов на вашем балансе. Пожалуйста, пополните или свяжитесь с поддержкой для получения дополнительного доступа."
+        },
+        "humanization_error": {
+            "eng": "🔧 Oops! We've encountered a small hiccup in our text processing system. Our developers have been notified and are already working their magic to fix it! ✨\n\n🙏 Please try again in a few moments. We appreciate your patience! 🌟",
+            "uzb": "🔧 Oops! Matnni qayta ishlash tizimimizda kichik muammo yuz berdi. Dasturchilarimiz xabardor qilindi va uni tuzatish uchun allaqachon ishlamoqda! ✨\n\n🙏 Iltimos, bir necha daqiqadan so'ng yana urinib ko'ring. Sabringiz uchun minnatdormiz! 🌟",
+            "rus": "🔧 Ой! Мы столкнулись с небольшой проблемой в нашей системе обработки текста. Наши разработчики уведомлены и уже работают над ее устранением! ✨\n\n🙏 Пожалуйста, попробуйте еще раз через несколько минут. Мы ценим ваше терпение! 🌟"
+        },
+        "humanized_text": {
+            "eng": "Humanized text (Mode: {user_mode}):\n\n{humanized_text}",
+            "uzb": "Insonlashtirilgan matn (Rejim: {user_mode}):\n\n{humanized_text}",
+            "rus": "Гуманизированный текст (Режим: {user_mode}):\n\n{humanized_text}"
+        },
+        "csv_files_sent": {
+            "eng": "📂 All CSV files have been sent.",
+            "uzb": "📂 Barcha CSV fayllar yuborildi.",
+            "rus": "📂 Все CSV файлы отправлены."
+        },
+        "no_csv_files": {
+            "eng": "No CSV files available.",
+            "uzb": "CSV fayllar mavjud emas.",
+            "rus": "CSV файлы недоступны."
+        },
+        "top_up_history": {
+            "eng": "Your top-up history:\n{history_text}",
+            "uzb": "To'ldirish tarixi:\n{history_text}",
+            "rus": "История пополнений:\n{history_text}"
+        },
+        "no_top_up_history": {
+            "eng": "No top-up history found.",
+            "uzb": "To'ldirish tarixi topilmadi.",
+            "rus": "История пополнений не найдена."
+        },
+        "ticket_history": {
+            "eng": "📜 Your ticket history:\n\n{tickets_text}",
+            "uzb": "📜 Chiptalar tarixi:\n\n{tickets_text}",
+            "rus": "📜 История билетов:\n\n{tickets_text}"
+        },
+        "no_ticket_history": {
+            "eng": "No ticket history found.",
+            "uzb": "Chiptalar tarixi topilmadi.",
+            "rus": "История билетов не найдена."
+        }
+    }
+}
