@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from .models import CustomUser, Subscription, Transaction, TopUp
-from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
     
 class UserSerializer(serializers.ModelSerializer):
@@ -9,6 +8,7 @@ class UserSerializer(serializers.ModelSerializer):
         fields = [
             'id',
             'user_id',
+            'password',
             'referred_by',
             'words',
             'balance',
@@ -18,6 +18,20 @@ class UserSerializer(serializers.ModelSerializer):
             'date_created',
             'date_updated',
         ]
+        extra_kwargs = {'password': {'write_only': True}}
+
+    def create(self, validated_data):
+        user = CustomUser.objects.create_user(
+            user_id=validated_data['user_id'],
+            password=validated_data['password'],
+            referred_by=validated_data.get('referred_by', 0),
+            words=validated_data.get('words', 200),
+            balance=validated_data.get('balance', 0),
+            language=validated_data.get('language', 'en'),
+            is_active=validated_data.get('is_active', True),
+            is_staff=validated_data.get('is_staff', False)
+        )
+        return user
 
 class SubscriptionSerializer(serializers.ModelSerializer):
     class Meta:
