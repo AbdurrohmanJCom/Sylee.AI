@@ -38,16 +38,18 @@ bot_data = {}
 @bot.message_handler(commands=['start'])
 def send_welcome(message: Message):
     user_id = message.chat.id
-    # Register the user
-    try:
-        response = register_user(user_id, "defaultpassword")  # Use a default password or generate one
-        if 'detail' in response and response['detail'] == 'User already exists.':
-            bot.send_message(user_id, "Welcome back! You are already registered.")
-        else:
-            bot.send_message(user_id, "You have been successfully registered!")
-    except Exception as e:
-        bot.send_message(user_id, f"An error occurred during registration: {str(e)}")
-        return
+    user_data = get_user(user_id)
+
+    if 'detail' in user_data and user_data['detail'] == 'Not found.':
+        try:
+            response = register_user(user_id, "defaultpassword")  # Use a default password or generate one
+            if 'detail' in response and response['detail'] == 'User already exists.':
+                bot.send_message(user_id, "Welcome back! You are already registered.")
+            else:
+                bot.send_message(user_id, "You have been successfully registered!")
+        except Exception as e:
+            bot.send_message(user_id, f"An error occurred during registration: {str(e)}")
+            return
 
     # Send welcome message
     bot.send_message(
@@ -79,6 +81,13 @@ def main_menu_markup():
 
 @bot.message_handler(func=lambda message: message.text == 'Humanize 👤')
 def prompt_humanize(message: Message):
+    user_id = message.chat.id
+    user_data = get_user(user_id)
+
+    if 'detail' in user_data and user_data['detail'] == 'Not found.':
+        bot.send_message(message.chat.id, "Please use /start to register first.")
+        return
+
     bot.send_message(
         message.chat.id,
         "📝 Send me the text you'd like to humanize. You can send multiple messages. Tap 'Done' when you're finished.",
@@ -294,6 +303,13 @@ def obtain_humanized_text(task_id):
 
 @bot.message_handler(func=lambda message: message.text == 'Ask4Help 🧑‍💻')
 def send_help_info(message: Message):
+    user_id = message.chat.id
+    user_data = get_user(user_id)
+
+    if 'detail' in user_data and user_data['detail'] == 'Not found.':
+        bot.send_message(message.chat.id, "Please use /start to register first.")
+        return
+
     faq_text = (
         "📚 <b>Frequently Asked Questions</b> 📚\n\n"
         "1. <b>How do I humanize text?</b>\n"
@@ -304,7 +320,7 @@ def send_help_info(message: Message):
         "   - Select a package and follow the payment instructions.\n\n"
         "4. <b>What if I encounter an error?</b>\n"
         "   - Contact support for assistance.\n\n"
-        "For further assistance, please contact our admin: <a href='https://t.me/admin_username'>@admin_username</a>"
+        "For further assistance, please contact our admin: <a href='https://t.me/cheater_joseph'>@cheater_joseph</a>"
     )
 
     bot.send_message(
@@ -321,7 +337,7 @@ def show_profile(message: Message):
         user_data = get_user(user_id)
         
         if 'detail' in user_data and user_data['detail'] == 'Not found.':
-            bot.send_message(message.chat.id, "User profile not found. Please register first.")
+            bot.send_message(message.chat.id, "User profile not found. Please register first /start.")
             return
         
         # Extract user details
