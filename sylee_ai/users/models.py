@@ -20,7 +20,7 @@ class CustomUserManager(BaseUserManager):
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
-    user_id = models.BigIntegerField(unique=True)
+    user_id = models.BigIntegerField(unique=True, primary_key=True)
     referred_by = models.IntegerField(default=0)
     words = models.IntegerField(default=200)
     balance = models.IntegerField(default=0)
